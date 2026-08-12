@@ -1,0 +1,145 @@
+.ad-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.ad-container {
+  background: linear-gradient(135deg, var(--bg-primary, #121212) 0%, var(--bg-secondary, #1db954) 100%);
+  border-radius: 16px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+.ad-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  z-index: 1001;
+}
+
+.ad-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.ad-content {
+  padding: 40px 30px 30px;
+  text-align: center;
+}
+
+.ad-header {
+  margin-bottom: 24px;
+}
+
+.ad-logo {
+  max-width: 120px;
+  max-height: 120px;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+.ad-body {
+  margin-bottom: 24px;
+}
+
+.ad-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 12px;
+}
+
+.ad-description {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.ad-footer {
+  display: flex;
+  gap: 12px;
+}
+
+.ad-button {
+  flex: 1;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #1db954 0%, #1ed760 100%);
+  color: white;
+  border: none;
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+}
+
+.ad-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(29, 185, 84, 0.4);
+}
+
+.ad-countdown {
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 0.4px;
+}
+
+@media (max-width: 600px) {
+  .ad-container {
+    max-width: 90%;
+  }
+
+  .ad-content {
+    padding: 30px 20px 20px;
+  }
+
+  .ad-title {
+    font-size: 20px;
+  }
+
+  .ad-description {
+    font-size: 14px;
+  }
+
+  .ad-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}

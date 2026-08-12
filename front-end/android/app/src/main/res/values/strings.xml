@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">RifllyMusical</string>
+    <string name="title_activity_main">RifllyMusical</string>
+    <string name="package_name">com.willian.music</string>
+    <string name="custom_url_scheme">com.willian.music</string>
+</resources>

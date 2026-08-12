@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Sitemap: https://deploy-full-stack-l3y8.onrender.com/sitemap.xml
