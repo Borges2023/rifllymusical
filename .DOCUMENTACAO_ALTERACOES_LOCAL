@@ -1,0 +1,5 @@
+Integração nativa do AdMob concluída para anúncio de abertura.
+- ID do aplicativo registrado no [AndroidManifest.xml (line 6)](C:/Users/administrator/Documents/baixado do github/ATUAL/rifllymusical/front-end/android/app/src/main/AndroidManifest.xml:6).
+- SDK Google Mobile Ads e ciclo de vida adicionados ao [build.gradle (line 34)](C:/Users/administrator/Documents/baixado do github/ATUAL/rifllymusical/front-end/android/app/build.gradle:34).
+- Novo gerenciador em [RifllyApplication.java (line 1)](C:/Users/administrator/Documents/baixado do github/ATUAL/rifllymusical/front-end/android/app/src/main/java/com/willian/music/RifllyApplication.java:1), usando o bloco ca-app-pub-4360483696634548/4187765788 ao abrir/retornar ao app.
+A compilação não terminou dentro do limite porque o Gradle ainda estava baixando dependências; a verificação de formatação passou. Para testar, compile no Android Studio. Evite clicar em anúncios reais durante desenvolvimento; use o ID de teste indicado pelo guia oficial até publicar.
